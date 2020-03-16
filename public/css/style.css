@@ -1,0 +1,322 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+a {
+    color: #5181b8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.app > .header {
+    display: block;
+    height: 70px;
+    background: #5181b8;
+    box-shadow: 0 1px 10px rgba(0,0,0,.2);
+}
+
+.app > .header > .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.app > .header a.logo {
+    display: inline-block;
+    margin-right: 20px;
+    color: #FFF;
+    font-size: 1.3rem;
+    line-height: 70px;
+}
+
+.app > .header a.logo:hover {
+    text-decoration: none;
+}
+
+.app > .header ul.nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.app > .header ul.nav > li {
+    display: inline-block;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.app > .header ul.nav > li > a {
+    display: block;
+    color: #FFF;
+    font-weight: 500;
+}
+
+.app > .content {
+    display: block;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.app > .content > .info {
+    display: block;
+    margin: 30px 0;
+}
+
+.app > .content > .info > h1.title {
+    display: block;
+    margin: 0 0 3px;
+    padding: 0;
+    color: #676767;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.app > .content > .info > h2.description {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #959595;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.app > .content > .alert {
+    display: block;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    color: #FFF;
+    border-radius: 2px;
+}
+
+.app > .content > .alert.alert-success {
+    background: #32c787;
+}
+
+.app > .content > .alert.alert-error {
+    background: #ff6b68;
+}
+
+.app > .content > .control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.app > .content > .control > .search {
+    display: flex;
+    position: relative;
+}
+
+.app > .content > .control > .search > input {
+    width: 260px;
+    padding-right: 58px;
+}
+
+.app > .content > .control > .search > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #959595;
+}
+
+.app > .content > .control > .search > button:hover {
+    color: #5181b8;
+}
+
+.app > .content #bookmarkDelete {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    box-sizing: border-box;
+    color: #707070;
+    border-spacing: 0;
+}
+
+.table thead th {
+    padding: 0 20px 20px;
+    font-weight: 500;
+    text-align: left;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.table thead th.sortable {
+    padding: 0;
+    position: relative;
+}
+
+.table thead th.sortable > a {
+    display: block;
+    padding: 0 30px 20px 20px;
+    color: #707070;
+}
+
+.table thead th.sortable > a:hover {
+    text-decoration: none;
+}
+
+.table thead th.sortable > i {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.table thead th.sortable > i.fa.fa-sort {
+    display: none;
+    color: #959595;
+}
+
+.table thead th.sortable:hover > i.fa.fa-sort {
+    display: block;
+}
+
+.table tbody td {
+    padding: 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table thead th, .table tbody td {
+    word-break: break-word;
+}
+
+.table thead th.thin, .table tbody td.thin {
+    width: 1px;
+    white-space: nowrap;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 5px;
+    color: #9c9c9c;
+    font-weight: 400;
+}
+
+input[type="text"], input[type="password"] {
+    display: block;
+    padding: 9px 20px;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #f1f1f1;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    box-sizing: border-box;
+    transition: .1s all ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #5181b8;
+    transition: .1s all ease-in-out;
+}
+
+::-webkit-input-placeholder {
+    color: #9c9c9c;
+}
+
+:-ms-input-placeholder {
+    color: #9c9c9c;
+}
+
+::placeholder {
+    color: #9c9c9c;
+}
+
+.form-group > span.error {
+    display: block;
+    margin-top: 5px;
+    font-size: .9rem;
+    color: #ff6b68;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    box-shadow: none;
+    outline: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    text-decoration: none;
+}
+
+.btn.btn-primary {
+    color: #FFF;
+    background: #5181b8;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+    background: #5b88bd;
+}
+
+.btn.btn-danger {
+    color: #FFF;
+    background: #ff6b68;
+}
+
+.btn.btn-danger:hover, .btn.btn-danger:focus, .btn.btn-danger:active {
+    background: #ff4743;
+}
+
+ul.pagination {
+    display: inline-flex;
+    margin: 20px 0;
+    padding: 0;
+    width: auto;
+    border: 1px solid #f1f1f1;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+ul.pagination > li {
+    display: block;
+}
+
+ul.pagination > li > a, ul.pagination > li > span {
+    display: block;
+    padding: 9px 20px;
+    border-right: 1px solid #f1f1f1;
+}
+
+ul.pagination > li.active > a, ul.pagination > li.active > span {
+    background: #5181b8;
+    color: #FFF;
+}
+
+ul.pagination > li:last-child > a, ul.pagination > li:last-child > span {
+    border-right: none;
+}
